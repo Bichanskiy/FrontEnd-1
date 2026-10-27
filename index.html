@@ -2,43 +2,46 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Карточка товара</title>
+    <title>Профиль</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="card">
-        <div class="card__header">
-            <img class="card__img" src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/a07/c6d/868/a07c6d86819c0b7496ec422f20df13e8.png" alt="Картинка">
+    <div class="profile">
+        <div class="profile__header">
+            <img class="profile__cap" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy_e7WSS-NRYlGrVm-8Gr_q5kiiVYM5qGe9rjJz7v3C-o-F2mIZlUTVzxM&s=10" alt="Шапка профиля">
+            <img class="profile__avatar" src="https://static.wikia.nocookie.net/mafiagame/images/6/65/VitoScaletta-MafiaII.png/revision/latest/scale-to-width/360?cb=20260419152845" alt="Аватар профиля">
+        </div>
+
+        <div class="profile__description">
+            <span class="profile__name">Вито Скалетта</span>
+            <span class="profile__job">Мафиози</span>
+            <button class="profile__like-button">❤️</button>
             
-            <div class="card__actions">
-                <button class="card__btn-action">❤️</button>
-                <button class="card__btn-action">🛒</button>
-                <button class="card__btn-action">👁️</button>
+            <div class="profile__expirience">
+                <div class="profile__company-expirience">
+                    <img class="profile__company-image" src="https://static.wikia.nocookie.net/mafiagame/images/6/61/Carlo_Falcone.jpg/revision/latest?cb=20241211184138" alt="Картинка компании">
+                    <span class="profile__job-name">Солдат Фальконе</span>
+                </div>
+                <span class="profile__year-expirience">6 месяцев</span>
             </div>
         </div>
 
-        <div class="card__body">
-            <div class="card__row">
-                <span class="card__category">Backend development</span>
-                <span class="card__rating">★ 3'4</span>
+        <div class="profile__stats">
+            <div class="profile__stats-item">
+                <span class="profile__rating-value">4.3</span>
+                <span class="profile__rating-name">Рейтинг</span>
             </div>
-
-            <h2 class="card__title">Backend</h2>
-            
-            <p class="card__desc">
-                Мы научим тебя писать бекенд
-            </p>
-
-            <div class="card__sales">Продажи не сосчитать</div>
-
-            <div class="card__price">
-                <span class="card__price-old">1 млн. руб.</span>
-                <span class="card__price-new">53.43 руб.</span>
+            <div class="profile__stats-item">
+                <span class="profile__earned-value">55 000$</span>
+            <span class="profile__earned-name">Заработано</span>
             </div>
-
-            <button class="card__button">Узнать больше></button>
+            <div class="profile__stats-item">
+                <span class="profile__salary-value">1.5$ / час</span>
+                <span class="profile__salary-name">Зарплата</span>
+            </div> 
         </div>
+        <button class="profile__action-button">Связаться</button>
     </div>
 
 </body>
